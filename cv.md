@@ -2,8 +2,9 @@
 
 1. #### Contacts:
 
-vola.graholska@gmail.com
-+375259121741
+e-mail: **vola.graholska@gmail.com**
+
+phone: **+375259121741**
 
 2. #### Summary:
 
