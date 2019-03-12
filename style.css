@@ -3,8 +3,13 @@
     padding: 0;
 }
 
+body {
+    height: 100%;
+}
 
 .container-center {
+    position: relative;
+    min-height: 100%;
     box-sizing: content-box;
     max-width: 944px;
     margin-left: auto;
@@ -13,6 +18,38 @@
     font-family: 'Assistant', sans-serif;
     font-weight: 300;
 }
+
+ul {
+    margin: 10px 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #c11e20;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #0a1a34;
+}
+
+h3 {
+    padding-bottom: 20px;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 100;
+    font-size: 26px;
+    text-transform: uppercase;
+    
+}
+
+code {
+    display: block;
+    background-color: #c11e20;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
 /*========HEADER=========*/
 .photo {
     display: flex;
@@ -33,6 +70,7 @@
 .head-text {
     padding: 10px 0px 30px 0px;
 }
+
 .center{
     display: flex;
     justify-content: center;
@@ -47,20 +85,17 @@
 }
 
 /*========MAIN=========*/
+
+main {
+    padding-bottom: 40px;
+}
+
 .container-about {
     padding: 40px;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
 
-h3 {
-    padding-bottom: 20px;
-    font-family: 'Assistant', sans-serif;
-    font-weight: 100;
-    font-size: 26px;
-    text-transform: uppercase;
-    
-}
 .experience {
     display: flex;
     flex-wrap: wrap;
@@ -85,19 +120,20 @@ h3 {
     font-weight: 400;
 }
 
-ul {
-    margin: 10px 30px;
-}
+footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    padding: 5px 30px;
+    background-color: #0a1a34;
+    color: #696969;
 
-a {
-    text-decoration: none;
-    color: #c11e20;
 }
-
-a:hover {
-    text-decoration: none;
-    color: #0a1a34;
-}    
 
 /*========ICONS LINK=========*/
 
@@ -112,53 +148,31 @@ a:hover {
     font-weight: normal;
     font-style: normal;
   }
-  /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-  /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-  /*
-  @media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-      font-family: 'fontello';
-      src: url('../font/fontello.svg?64559496#fontello') format('svg');
-    }
-  }
-  */
    
    [class^="icon-"]:before, [class*=" icon-"]:before {
     font-family: "fontello";
     font-style: normal;
     font-weight: normal;
     speak: none;
-   
     display: inline-block;
     text-decoration: inherit;
     width: 1em;
     margin-right: .2em;
     text-align: center;
-    /* opacity: .8; */
-   
-    /* For safety - reset parent styles, that can break glyph codes*/
     font-variant: normal;
     text-transform: none;
-   
-    /* fix buttons height, for twitter bootstrap */
-    line-height: 1em;
-   
-    /* Animation center compensation - margins should be symmetric */
-    /* remove if not needed */
     margin-left: .2em;
-   
-    /* you can be more comfortable with increased icons size */
-    /* font-size: 120%; */
-   
-    /* Font smoothing. That was taken from TWBS */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-   
-    /* Uncomment for 3D effect */
-    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
   }
    
-  .icon-mobile:before { content: '\e800'; } /* '' */
-  .icon-mail:before { content: '\e801'; } /* '' */
-  .icon-location:before { content: '\e802'; } /* '' */
+.icon-mobile:before { 
+    content: '\e800'; 
+} 
+
+.icon-mail:before { 
+    content: '\e801'; 
+} 
+
+.icon-location:before { 
+    content: '\e802'; 
+}
 
