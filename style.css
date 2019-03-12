@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container-center {
+    box-sizing: content-box;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
